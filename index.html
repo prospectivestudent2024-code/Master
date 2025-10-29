@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Brother Impex | LONGi Hi-MO X7 620W</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif;}
+    body{background-color:#f8f9fa;color:#333;scroll-behavior:smooth;}
+
+    nav{background:#004aad;color:white;display:flex;justify-content:space-between;align-items:center;
+      padding:15px 8%;position:sticky;top:0;z-index:1000;box-shadow:0 3px 10px rgba(0,0,0,0.2);}
+    .logo{display:flex;align-items:center;}
+    .logo img{width:50px;height:50px;margin-right:10px;border-radius:8px;}
+    nav ul{list-style:none;display:flex;gap:25px;}
+    nav ul li a{color:white;text-decoration:none;font-weight:500;transition:0.3s;}
+    nav ul li a:hover{color:#ffb400;}
+    .lang-switch{display:flex;gap:10px;}
+    .lang-switch button{background:#ffb400;border:none;color:white;padding:6px 10px;border-radius:5px;cursor:pointer;font-size:0.9rem;transition:0.3s;}
+    .lang-switch button:hover{background:#ffaa00;}
+
+    .hero{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url('images/background.jpg') no-repeat center/cover;
+      color:white;text-align:center;padding:140px 20px;animation:fadeIn 2s ease-in-out;}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .hero h1{font-size:3rem;margin-bottom:10px;}
+    .hero p{font-size:1.2rem;opacity:0.9;}
+
+    section{padding:70px 10%;}
+    .product{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:40px;}
+    .product img{width:100%;max-width:550px;border-radius:15px;box-shadow:0 8px 15px rgba(0,0,0,0.2);transition:0.3s;}
+    .product img:hover{transform:scale(1.03);}
+    .product-description{max-width:600px;}
+    .product-description h2{color:#004aad;margin-bottom:15px;}
+    .product-description p{line-height:1.7;font-size:1.05rem;}
+
+    table{width:100%;border-collapse:collapse;margin-top:20px;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+    table th,table td{border:1px solid #ddd;padding:10px 15px;text-align:left;}
+    table th{background-color:#004aad;color:white;}
+    table tr:nth-child(even){background-color:#f3f6fa;}
+
+    .order-btn{display:block;margin:50px auto;padding:15px 35px;background-color:#ffb400;color:white;font-size:1.2rem;border:none;
+      border-radius:8px;cursor:pointer;transition:0.3s;}
+    .order-btn:hover{background-color:#ffaa00;transform:translateY(-3px);}
+
+    form{display:none;background:#ffffff;padding:40px;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.15);
+      max-width:700px;margin:0 auto;transition:0.5s;}
+    form.active{display:block;}
+    form input,form textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #ccc;border-radius:8px;font-size:1rem;}
+    form button{background-color:#004aad;color:white;border:none;padding:14px 25px;font-size:1rem;border-radius:8px;cursor:pointer;}
+    form button:hover{background-color:#003380;}
+
+    footer{background:#004aad;color:white;text-align:center;padding:40px 10px;margin-top:60px;}
+    footer h3{margin-bottom:10px;}footer p{margin:5px 0;opacity:0.9;}
+
+    @media(max-width:768px){.product{flex-direction:column;}.hero h1{font-size:2.2rem;}}
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Logo"/>
+      <h2>Master Brother Impex</h2>
+    </div>
+    <ul>
+      <li><a href="#home" id="nav-home">Home</a></li>
+      <li><a href="#product" id="nav-product">Product</a></li>
+      <li><a href="#order" id="nav-order">Order</a></li>
+      <li><a href="#contact" id="nav-contact">Contact</a></li>
+    </ul>
+    <div class="lang-switch">
+      <button onclick="setLang('en')">EN</button>
+      <button onclick="setLang('uz')">UZ</button>
+      <button onclick="setLang('ru')">RU</button>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1 id="hero-title">Powering a Greener Future</h1>
+    <p id="hero-desc">High-performance LONGi Hi-MO X7 620W solar panels for every home and business.</p>
+  </section>
+
+  <section class="product" id="product">
+    <img src="images/quyosh_panel1.webp" alt="LONGi Hi-MO X7 620W Solar Panel">
+    <div class="product-description">
+      <h2 id="product-title">LONGi Hi-MO X7 620W Solar Panel</h2>
+      <p id="product-desc">
+        The LONGi Hi-MO X7 620W solar module is a high-performance, bifacial panel designed for
+        residential, commercial, and industrial applications.
+      </p>
+      <h3 style="margin-top:20px; color:#004aad;" id="spec-title">Technical Specifications:</h3>
+      <table>
+        <tr><th>Power Output</th><td>620W</td></tr>
+        <tr><th>Efficiency</th><td>Up to 23%</td></tr>
+        <tr><th>Voltage (Voc)</th><td>52.77V</td></tr>
+        <tr><th>Current (Isc)</th><td>14.85A</td></tr>
+        <tr><th>Dimensions</th><td>2382×1134×30mm</td></tr>
+        <tr><th>Weight</th><td>33.5kg</td></tr>
+      </table>
+      <h3 style="margin-top:20px; color:#004aad;" id="benefit-title">Key Benefits:</h3>
+      <ul id="benefit-list" style="line-height:1.8; margin-top:10px;">
+        <li>High energy yield and long-term reliability.</li>
+        <li>Bifacial design for increased power generation.</li>
+        <li>Durable dual-glass construction.</li>
+      </ul>
+    </div>
+  </section>
+
+  <button class="order-btn" onclick="toggleForm()" id="order-btn">Place an Order</button>
+
+  <!-- ✅ BUYURTMA FORM -->
+  <form id="orderForm" action="https://formspree.io/f/prospectivestudent2024@gmail.com" method="POST">
+    <h2 style="color:#004aad; text-align:center;" id="form-title">Order Form</h2>
+    <input type="text" name="Full Name" placeholder="Full Name" required>
+    <input type="text" name="Company Name" placeholder="Company Name" required>
+    <input type="tel" name="Phone" placeholder="Phone Number" required>
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <textarea name="Address" placeholder="Delivery Address" rows="3" required></textarea>
+    <button type="submit" id="submit-btn">Submit Order</button>
+  </form>
+
+  <footer id="contact">
+    <h3 id="contact-title">Contact Us</h3>
+    <p>📍 Bukhara, Uzbekistan</p>
+    <p>📞 +998 99 418 77 76</p>
+    <p>✉️ info@masterbrotherimpex.com</p>
+    <p>© 2025 Master Brother Impex. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleForm(){
+      document.getElementById('orderForm').classList.toggle('active');
+      window.scrollTo({top:document.getElementById('orderForm').offsetTop-50,behavior:'smooth'});
+    }
+
+    const langData = {
+      en:{
+        heroTitle:"Powering a Greener Future",
+        heroDesc:"High-performance LONGi Hi-MO X7 620W solar panels for every home and business.",
+        productTitle:"LONGi Hi-MO X7 620W Solar Panel",
+        productDesc:"The LONGi Hi-MO X7 620W solar module delivers exceptional efficiency and durability for all energy solutions.",
+        orderBtn:"Place an Order", formTitle:"Order Form",
+        contactTitle:"Contact Us",
+        nav:{home:"Home",product:"Product",order:"Order",contact:"Contact"}
+      },
+      uz:{
+        heroTitle:"Yashil kelajak sari quvvat manbai",
+        heroDesc:"LONGi Hi-MO X7 620W – har bir uy va korxona uchun yuqori samarali quyosh paneli.",
+        productTitle:"LONGi Hi-MO X7 620W Quyosh Paneli",
+        productDesc:"LONGi Hi-MO X7 620W quyosh paneli yuqori samaradorlik va mustahkamlikni ta’minlaydi.",
+        orderBtn:"Buyurtma berish", formTitle:"Buyurtma formasi",
+        contactTitle:"Biz bilan bog‘laning",
+        nav:{home:"Bosh sahifa",product:"Mahsulot",order:"Buyurtma",contact:"Aloqa"}
+      },
+      ru:{
+        heroTitle:"Энергия для зеленого будущего",
+        heroDesc:"Солнечные панели LONGi Hi-MO X7 620W — высокая эффективность для дома и бизнеса.",
+        productTitle:"Солнечная панель LONGi Hi-MO X7 620W",
+        productDesc:"LONGi Hi-MO X7 620W обеспечивает отличную эффективность и надежность.",
+        orderBtn:"Сделать заказ", formTitle:"Форма заказа",
+        contactTitle:"Свяжитесь с нами",
+        nav:{home:"Главная",product:"Продукт",order:"Заказ",contact:"Контакт"}
+      }
+    };
+
+    function setLang(lang){
+      const l=langData[lang];
+      document.getElementById('hero-title').innerText=l.heroTitle;
+      document.getElementById('hero-desc').innerText=l.heroDesc;
+      document.getElementById('product-title').innerText=l.productTitle;
+      document.getElementById('product-desc').innerText=l.productDesc;
+      document.getElementById('order-btn').innerText=l.orderBtn;
+      document.getElementById('form-title').innerText=l.formTitle;
+      document.getElementById('contact-title').innerText=l.contactTitle;
+      document.getElementById('nav-home').innerText=l.nav.home;
+      document.getElementById('nav-product').innerText=l.nav.product;
+      document.getElementById('nav-order').innerText=l.nav.order;
+      document.getElementById('nav-contact').innerText=l.nav.contact;
+    }
+  </script>
+</body>
+</html>
